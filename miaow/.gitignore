@@ -1,0 +1,9 @@
+# Ignore IDE files
+.idea
+miaow.iml
+
+# Ignore node.js modules
+node_modules
+
+# Ignore Mac OS files
+.DS_Store

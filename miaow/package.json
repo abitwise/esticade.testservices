@@ -1,0 +1,16 @@
+{
+  "name": "miaow",
+  "version": "0.0.1",
+  "description": "Says Miaow when receiving message",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Olger Oeselg",
+  "license": "MIT",
+  "dependencies": {
+    "esticade": "^1.0.7",
+    "player": "^0.6.1"
+  }
+}
