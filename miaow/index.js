@@ -15,3 +15,8 @@ service.on("Miaow", (ev) => {
     ev.emit('FeedMe', {cat: "Feed Me!"});
     play('cat.wav');
 });
+
+service.on("Feed", (ev) => {
+    console.log(chalk.magenta('Cat: ') + chalk.cyan('"Nom nom nom"'));
+    ev.emit('Nomnomnom', {cat: "Omnomnomnom"}).then(() => setTimeout(() => service.shutdown()));
+});
