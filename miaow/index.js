@@ -1,14 +1,17 @@
-var Player = require("player");
-var player = new Player('./sounds/cat.mp3');
-
+var edge = require('edge');
+var chalk = require('chalk');
 var service = require("esticade")("Miaow Service");
 
+var play = edge.func(function() {/*
+ async (input) => {
+     var player = new System.Media.SoundPlayer((string)input);
+     player.PlaySync();
+     return null;
+ }
+*/});
+
 service.on("Miaow", (ev) => {
-    player.play(function(err, player) {
-        if (err) {
-            console.log(err);
-        } else {
-            console.log('playend!');
-        }
-    });
+    console.log(chalk.magenta('Cat: ') + chalk.cyan('"Miaow"'));
+    ev.emit('FeedMe', {cat: "Feed Me!"});
+    play('cat.wav');
 });

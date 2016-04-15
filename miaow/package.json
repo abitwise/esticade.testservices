@@ -10,7 +10,8 @@
   "author": "Olger Oeselg",
   "license": "MIT",
   "dependencies": {
-    "esticade": "^1.0.7",
-    "player": "^0.6.1"
+    "chalk": "^1.1.3",
+    "edge": "^5.0.0",
+    "esticade": "^1.0.7"
   }
 }
