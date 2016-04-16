@@ -1,7 +1,7 @@
 # Miaow Service
 
 Miaow service plays miaow sound on esticade event "Miaow".
-PS! Currently only works on Windows.
+PS! Currently only works on Windows and Mac.
 
 ## Installation
 
@@ -13,8 +13,14 @@ npm install
 
 ## Start service
 
+For Windows:
 ``` bash
 npm start
+```
+
+For Mac OS X:
+``` bash
+node indexMac.js
 ```
 
 ## Credits
